@@ -6,3 +6,18 @@
 $(document).ready(function() {
 
 });
+$(function(){
+	$(".modal-inline").fancybox({
+		type: 'inline',
+		fixed: true,
+		width       : '100%',
+		minWidth: 900,
+		helpers : {
+      overlay : {
+        css : {
+            'background' : 'rgba(255, 255, 255, 0.9)'
+        }
+      }
+    }
+   })
+})

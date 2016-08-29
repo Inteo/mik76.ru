@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="f/css/bootstrap-multiselect.css">
     <link rel="stylesheet" href="f/css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold"
     rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false">
 		</script>
@@ -111,7 +111,7 @@
 			</div>
 			<div class="main-menu">
   			<ul>
-					<li><a href="#">О компании</a></li>
+					<li><a href="#apartment-popup" class="modal-inline">О компании</a></li>
 					<li><a href="#">Реализованные проекты</a></li>
 					<li><a href="#">Партнеры</a></li>
 					<li><a href="#">Документация</a></li>
@@ -476,7 +476,7 @@
         <div class="decorating__btn">
           <a href="#" class="btn"><i class="icon-photo"></i>Посмотреть фото</a>
         </div>
-        <ul class="decorating__list">
+        <ul class="decorating__list row">
           <li>
             <img src="f/i/decorating/1.png" alt="">
             <p>Стены выровнены и&nbsp;оштукатурены</p>
@@ -622,10 +622,39 @@
   	</div>
   </footer>
   <div class="popups">
-  	
+  	<div class="popup apartment-popup" id="apartment-popup">
+      <div class="popup__holder">
+        <div class="row">
+          <div class="col-md-9 col-sm-9">
+            <div class="apartment-popup__img">
+              <img class="apartment-popup__sides" src="f/i/sides.png" alt="">
+              <img src="f/i/planning/2.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-5">
+            <p class="popup__title"><span>2-комнатная квартира</span>№124</p>
+            <p class="apartment-popup__status"><span>Свободна</span></p>
+            <div class="apartment-popup__detail">
+              <p class="line"><span>Общая площадь</span><span>56,5 м<sup>2</sup></span></p>
+              <p class="line"><span>Высота потолков</span><span>2,7 м<sup>2</sup></span></p>
+              <p class="line"><span>Этаж</span><span>10</span></p>
+              <p class="line"><span>Цена за м<sup>2</sup></span><span>60 000 <i class="rub">&#8399;</i></p>
+            </div> 
+            <p class="apartment-popup__price">2 500 000 <i class="rub">&#8399;</i></p>
+            <div class="popup__btn">
+              <a href="#" class="btn"><i class="icon-lock"></i>Забронировать</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </div>
 </body>
 </html>
+
+
 
 
 

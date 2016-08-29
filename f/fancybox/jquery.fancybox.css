@@ -90,21 +90,57 @@
 }
 
 .fancybox-close {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 55px;
-	height: 55px;
-	cursor: pointer;
-	z-index: 8040;
-background: rgba(255,255,255,.5) url(../../f/i/icons.png) 0 -76px no-repeat;
-border:0!important;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
 }
-
+.fancybox-close:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: '';
+  background: #2196f3;
+  width: 20px;
+  height: 2px;
+  right: 0px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.fancybox-close:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: '';
+  background: #2196f3;
+  height: 2px;
+  width: 20px;
+  right: 0px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.fancybox-close:after,
+.fancybox-close:before {
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
 .fancybox-close:hover {
-background-position:-55px -76px;
+  text-decoration: none;
 }
-
+.fancybox-close:hover:before,
+.fancybox-close:hover:after {
+  background: #29b6f6;
+}
 .fancybox-nav {
 	position: absolute;
 	top: 0;
@@ -183,7 +219,6 @@ background-position:-55px -76px;
 	display: none;
 	z-index: 8010;
 	background: #000;
-	opacity: .7;
 }
 
 .fancybox-overlay-fixed {
