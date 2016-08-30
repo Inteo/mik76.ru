@@ -4,7 +4,46 @@
 //------------------------
 
 $(document).ready(function() {
-
+	$(".input.valid").unbind().blur( function(){
+    var id = $(this).attr('id');
+    var val = $(this).val();
+    switch(id)
+    {
+      case "email":
+        var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+        if(val != '' && rv_email.test(val))
+        {
+          $(this).removeClass('input_error').addClass('input_success');
+        }
+        else
+        {
+          $(this).removeClass('input_success').addClass('input_error');
+        }
+      break;  
+      case "name":
+        var rv_name = /^[a-zA-Zа-яА-Я]+$/;
+        if(val.length > 2 && val != '' && rv_name.test(val))
+        {
+          $(this).removeClass('input_error').addClass('input_success');
+        }
+        else
+        {
+          $(this).removeClass('input_success').addClass('input_error');
+        }
+      break;   
+      case "phone":
+        var rv_phone = /^\d+$/;
+        if(val.length > 5 && rv_phone.test(val) && val != '')
+        {
+           $(this).removeClass('input_error').addClass('input_success');
+        }
+        else
+        {
+          $(this).removeClass('input_success').addClass('input_error');
+        }
+      break;      
+    } 
+  }); 
 });
 $(function(){
 	$(".modal-inline").fancybox({

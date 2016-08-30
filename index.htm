@@ -101,7 +101,7 @@
   </head>
 <body onload='initialize()'>
 	<header class="header">
-		<div class="container header__holder">
+		<div class="wrap header__holder">
 			<a href="/" class="logo"><img src="f/i/logo.png" alt=""></a>
 			<div class="header__phone">
 				<div class="header__phone-holder">
@@ -121,48 +121,40 @@
 		</div>
 	</header>
 	<div class="content clearfix">
-    <div class="container">
+    <div class="wrap">
   		<section class="preface">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <div class="preface__img">
-              <img src="f/i/preface.jpg" alt="">
+        <div class="preface__img">
+          <img src="f/i/preface.jpg" alt="">
+        </div><div class="preface__content">
+          <div class="preface__content-holder">
+            <div class="preface__description">
+              <p class="preface__title">Жилой Дом комфорт-класса</p>
+              <p class="preface__name">«АВРОРА»</p>
+              <p class="preface__caption">Адрес</p>
+              <p class="preface__text">г.Ярославль, ул.9-я Красноборская д.5</p>
+              <p class="preface__caption">Срок сдачи</p>
+              <p class="preface__text">IV квартал 2017</p>
             </div>
-          </div>
-          <div class="preface__content col-md-5 col-sm-5">
-            <div class="preface__content-holder">
-              <div class="preface__description">
-                <p class="preface__title">Жилой Дом комфорт-класса</p>
-                <p class="preface__name">«АВРОРА»</p>
-                <p class="preface__caption">Адрес</p>
-                <p class="preface__text">г.Ярославль, ул.9-я Красноборская д.5</p>
-                <p class="preface__caption">Срок сдачи</p>
-                <p class="preface__text">IV квартал 2017</p>
-              </div>
-              <a href="#" class="btn btn-white">Выбрать квартиру<i class="arrow arrow_white"></i></a>
-            </div>
+            <a href="#" class="btn btn-white">Выбрать квартиру<i class="arrow arrow_white"></i></a>
           </div>
         </div>
       </section>
-      <section class="preface-detail holder">
-        <div class="row"> 
-          <div class="col-md-9 col-sm-9">
-            <div class="preface-detail__description">
-              <p class="preface-detail__title">Описание</p>
-              <p class="preface-detail__text">Жилой дом комфорт-класса &laquo;Аврора&raquo; расположен в&nbsp;самом экологически чистом районе города&nbsp;&mdash; Заволжском, внутри существующего жилого массива с&nbsp;развитой инфраструктурой и&nbsp;существующими благоустроенными проездами и&nbsp;пешеходными зонами, озеленением. Жилой комплекс расположен в&nbsp;50&nbsp;м от&nbsp;главной магистрали района&nbsp;&mdash; проспекта Машиностроителей, имеет отдельный проезд и&nbsp;отгорожен от&nbsp;шума существующей жилой застройкой.</p>
-              <a href="#" class="btn"><i class="icon-file"></i>Скачать презентацию</a>
-            </div>
+      <section class="preface-detail">
+        <div class="preface-detail__description-wrap">
+          <div class="preface-detail__description holder">
+            <p class="preface-detail__title">Описание</p>
+            <p class="preface-detail__text">Жилой дом комфорт-класса &laquo;Аврора&raquo; расположен в&nbsp;самом экологически чистом районе города&nbsp;&mdash; Заволжском, внутри существующего жилого массива с&nbsp;развитой инфраструктурой и&nbsp;существующими благоустроенными проездами и&nbsp;пешеходными зонами, озеленением. Жилой комплекс расположен в&nbsp;50&nbsp;м от&nbsp;главной магистрали района&nbsp;&mdash; проспекта Машиностроителей, имеет отдельный проезд и&nbsp;отгорожен от&nbsp;шума существующей жилой застройкой.</p>
+            <a href="#" class="btn"><i class="icon-file"></i>Скачать презентацию</a>
           </div>
-          <div class="col-md-5 col-sm-5">
-            <div class="preface-detail__info">
-              <p class="preface-detail__title">Характеристики</p>
-              <p class="line"><span>Этажность</span><span>12</span></p>
-              <p class="line"><span>Срок сдачи</span><span>IV квартарл 2017</span></p>
-              <p class="line"><span>Материал стен</span><span>Кирпич</span></p>
-              <p class="line"><span>1-комн. кв.</span><span>от 1 500 000 <i class="rub">&#8399;</i></span></p>
-              <p class="line"><span>2-комн. кв.</span><span>от 2 100 000 <i class="rub">&#8399;</i></span></p>
-              <p class="line"><span>3-комн. кв.</span><span>от 2 800 000 <i class="rub">&#8399;</i></span></p>
-            </div>
+        </div><div class="preface-detail__info-wrap">
+          <div class="preface-detail__info holder">
+            <p class="preface-detail__title">Характеристики</p>
+            <p class="line"><span>Этажность</span><span>12</span></p>
+            <p class="line"><span>Срок сдачи</span><span>IV квартарл 2017</span></p>
+            <p class="line"><span>Материал стен</span><span>Кирпич</span></p>
+            <p class="line"><span>1-комн. кв.</span><span>от 1 500 000 <i class="rub">&#8399;</i></span></p>
+            <p class="line"><span>2-комн. кв.</span><span>от 2 100 000 <i class="rub">&#8399;</i></span></p>
+            <p class="line"><span>3-комн. кв.</span><span>от 2 800 000 <i class="rub">&#8399;</i></span></p>
           </div>
         </div>
       </section>
@@ -293,7 +285,7 @@
         </div>
       </section>
       <section class="section planning">
-        <div class="container holder">
+        <div class="wrap holder">
           <h2 class="lined">Планировки</h2>
           <p class="section__text">В&nbsp;нашем доме каждый может найти планировку для себя: будь&nbsp;то однокомнатная квартира или трехкомнатная квартира для большой семьи.</p>
           <div class="planning-nav">
@@ -470,7 +462,7 @@
       </section>
     </div>
     <section class="section decorating section_gray">
-      <div class="container holder">
+      <div class="wrap holder">
         <h2 class="lined">Отделка квартир</h2>
         <p class="section__text">Квартиры сдаются с&nbsp;частичной отделкой. В&nbsp;них есть все, что нужно, чтобы начать новую жизнь без особых вложений в&nbsp;ремонт.</p>
         <div class="decorating__btn">
@@ -514,7 +506,7 @@
         </ul>
       </div>
     </section>
-    <section class="section construction container">
+    <section class="section construction wrap">
       <div class="holder">
         <h2 class="lined">Ход строительства</h2>
         <p class="section__text">Следите за строительством вашего дома прямо на сайте в режиме онлайн</p>
@@ -576,7 +568,7 @@
       </div>
     </section>
     <section class="section section_gray docs">
-      <div class="container holder">
+      <div class="wrap holder">
         <h2>Документация</h2>
         <div class="docs__holder">
           <div class="docs__item">
@@ -605,7 +597,7 @@
     </section>
 	</div>
   <footer class="footer cleafix">
-  	<div class="container footer__holder">
+  	<div class="wrap footer__holder">
   		<div class="social">
   			<a href="#" class="iconize-vk">&nbsp;</a><a href="#" class="iconize-fb">&nbsp;</a>
   		</div>
@@ -624,31 +616,42 @@
   <div class="popups">
   	<div class="popup apartment-popup" id="apartment-popup">
       <div class="popup__holder">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <div class="apartment-popup__img">
-              <img class="apartment-popup__sides" src="f/i/sides.png" alt="">
-              <img src="f/i/planning/2.png" alt="">
-            </div>
+        <div class="apartment-popup__img popup__col popup__col_9">
+          <div class="apartment-popup__img-holder">
+            <img class="apartment-popup__sides" src="f/i/sides.png" alt="">
+            <img src="f/i/planning/2.png" alt="">
           </div>
-          <div class="col-md-5 col-sm-5">
-            <p class="popup__title"><span>2-комнатная квартира</span>№124</p>
-            <p class="apartment-popup__status"><span>Свободна</span></p>
-            <div class="apartment-popup__detail">
-              <p class="line"><span>Общая площадь</span><span>56,5 м<sup>2</sup></span></p>
-              <p class="line"><span>Высота потолков</span><span>2,7 м<sup>2</sup></span></p>
-              <p class="line"><span>Этаж</span><span>10</span></p>
-              <p class="line"><span>Цена за м<sup>2</sup></span><span>60 000 <i class="rub">&#8399;</i></p>
-            </div> 
-            <p class="apartment-popup__price">2 500 000 <i class="rub">&#8399;</i></p>
+        </div><div class="apartment-popup__info popup__col popup__col_5">
+          <p class="popup__title"><span>2-комнатная квартира</span>№124</p>
+          <p class="apartment-popup__status"><span>Свободна</span></p>
+          <div class="apartment-popup__detail">
+            <p class="line"><span>Общая площадь</span><span>56,5 м<sup>2</sup></span></p>
+            <p class="line"><span>Высота потолков</span><span>2,7 м<sup>2</sup></span></p>
+            <p class="line"><span>Этаж</span><span>10</span></p>
+            <p class="line"><span>Цена за м<sup>2</sup></span><span>60 000 <i class="rub">&#8399;</i></p>
+          </div> 
+          <p class="apartment-popup__price">2 500 000 <i class="rub">&#8399;</i></p>
+          <div class="popup__btn">
+            <a href="#" class="btn"><i class="icon-lock"></i>Забронировать</a>
+          </div>
+        </div><!-- <div class="apartment-popup__reserve popup__col popup__col_5">
+          <p class="popup__title">Забронировать квартиру №124</p>
+          <p class="apartment-popup__text">Получив заявку на&nbsp;бронирование, мы&nbsp;оставляем за&nbsp;вами первое место в&nbsp;очереди на&nbsp;покупку этой квартиры.</p>
+          <form id="reserve" method="post" action="/send/">
+            <input type="text" class="input valid" placeholder="Ваше имя" name="name" id="name">
+            <input type="text" class="input valid" placeholder="Телефон" name="phone" id="phone">
             <div class="popup__btn">
-              <a href="#" class="btn"><i class="icon-lock"></i>Забронировать</a>
+              <button class="btn"><i class="icon-mail"></i>Отправить</button>
             </div>
-            
+          </form>
+        </div><div class="apartment-popup__success popup__col popup__col_5">
+          <p class="popup__title">Заявка успешно <br> отправлена</p>
+          <p class="apartment-popup__text">Очень скоро нас менеджер свяжется с вами!</p>
+          <div class="popup__btn">
+            <a href="#" class="btn">Спасибо</a>
           </div>
-        </div>
+        </div> -->
       </div>
-      
     </div>
   </div>
 </body>
