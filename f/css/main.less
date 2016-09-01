@@ -1669,6 +1669,25 @@ input:-moz-placeholder {
     & span {
       display: block;
     }
+    &_lined {
+      padding-bottom: 35px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        border-top: 1px solid #000;
+        height: 1px;
+        width: 67px;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
   }
   &__btn {
     & .btn {
@@ -2831,6 +2850,48 @@ a:hover .icon-inteo {
   }
   & .input:last-of-type {
     margin-bottom: 70px;
+  }
+}
+.boiler-popup {
+  text-align: left;
+  &__img {
+    position: relative;
+    overflow: hidden;
+    & img {
+      width: 994px;
+      height: 768px;
+      top: 50%;
+      left: 50%;
+      margin-top: -384px;
+      margin-left: -497px;
+      position: absolute;
+      opacity: 0;
+      &:first-of-type {
+        opacity: 1;
+      }
+      .transition(opacity, .6s, ease);
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+  &__scroll {
+    height: 500px;
+    overflow: hidden;
+    margin-right: -42px;
+    @media @medium {
+      margin-right: -12px;
+    }
+  }
+  &__info {
+    padding-right: 42px;
+    @media @medium {
+      padding-right: 22px;
+    }
+  }
+  &__text {
+    font-weight: 300;
+    margin-bottom: 40px;
   }
 }
 .made-by {

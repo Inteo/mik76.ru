@@ -16,10 +16,12 @@
     <script src="f/js/jquery.flexslider-min.js"></script>
     <script src="f/js/bootstrap-multiselect.js"></script>
     <script src="f/js/bootstrap.min.js"></script>
+    <script src="f/js/jquery.mCustomScrollbar.js"></script>
     <script src="f/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
     <link rel="stylesheet" href="f/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
     <link rel="stylesheet" href="f/css/flexslider.css">
     <link rel="stylesheet" href="f/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="f/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="f/css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold"
@@ -51,6 +53,24 @@
       $(document).ready(function() {
          $("#month-select").multiselect();
          $("#year-select").multiselect();
+         $(".boiler-popup__scroll").mCustomScrollbar({
+            callbacks:{
+              whileScrolling: function(){   
+                var x = this.mcs.content.find('.scroll-trig');
+                var d = -this.mcs.top;
+                x.each(function(i){
+                  var g = $(this).position().top;
+                  var img = $(".boiler-popup__img img").eq($(this).index(".scroll-trig"));
+                  if(d > Math.round(g) - 400) {
+                    img.addClass('active');
+                  }
+                  else {
+                    img.removeClass('active');
+                  }
+                });                 
+              }
+            }
+         });
       });
       (function() {
         $(window).load(function() {
@@ -112,7 +132,7 @@
 			<div class="main-menu">
   			<ul>
 					<li><a href="#apartment-popup" class="modal-inline">О компании</a></li>
-					<li><a href="#">Реализованные проекты</a></li>
+					<li><a href="#boiler-popup" class="modal-inline">Реализованные проекты</a></li>
 					<li><a href="#">Партнеры</a></li>
 					<li><a href="#">Документация</a></li>
 					<li><a href="#">Контакты</a></li>
@@ -651,6 +671,28 @@
             <a href="#" class="btn">Спасибо</a>
           </div>
         </div> -->
+      </div>
+    </div>
+    <div class="popup boiler-popup" id="boiler-popup">
+      <div class="popup__holder">
+        <div class="boiler-popup__img popup__col">
+          <img src="f/i/boiler/1.jpg" alt="">
+          <img src="f/i/boiler/2.jpg" alt="">
+          <img src="f/i/boiler/1.jpg" alt="">
+        </div><div class="popup__col">
+          <div class="boiler-popup__scroll">
+            <div class="boiler-popup__info">
+              <p class="popup__title popup__title_lined">Собственная крышная котельная</p>
+              <p class="boiler-popup__text">Одним из&nbsp;существенных преимуществ жилого комплекса является наличие собственной крышной газовой котельной, предназначенной исключительно для обеспечения нужд отопления и&nbsp;горячего водоснабжения дома.</p>
+              <p class="popup__subtitle scroll-trig">Наиболее оптимальный размер затрат на&nbsp;отопление жилого дома</p>
+              <p class="boiler-popup__text">Независимость от&nbsp;сторонней теплоснабжающей организации позволяет формировать самые экономичные тарифы на&nbsp;тепловую энергию, не&nbsp;принимая во&nbsp;внимание огромную протяженность городских тепловых сетей&nbsp;и, как следствие, оплату тепловых потерь при транспортировке тепловой энергии, отсутствие &laquo;посреднических&raquo; услуг при поставке тепловой энергии, полная независимость от&nbsp;состояния теплотрасс и&nbsp;&laquo;нерасторопности&raquo; при их&nbsp;ремонтах и&nbsp;профилактике.</p>
+              <p class="popup__subtitle scroll-trig">Наиболее оптимальный размер затрат на&nbsp;отопление жилого дома</p>
+              <p class="boiler-popup__text">Независимость от&nbsp;сторонней теплоснабжающей организации позволяет формировать самые экономичные тарифы на&nbsp;тепловую энергию, не&nbsp;принимая во&nbsp;внимание огромную протяженность городских тепловых сетей&nbsp;и, как следствие, оплату тепловых потерь при транспортировке тепловой энергии, отсутствие &laquo;посреднических&raquo; услуг при поставке тепловой энергии, полная независимость от&nbsp;состояния теплотрасс и&nbsp;&laquo;нерасторопности&raquo; при их&nbsp;ремонтах и&nbsp;профилактике.</p>
+              <p class="popup__subtitle scroll-trig">Наиболее оптимальный размер затрат на&nbsp;отопление жилого дома</p>
+              <p class="boiler-popup__text">Независимость от&nbsp;сторонней теплоснабжающей организации позволяет формировать самые экономичные тарифы на&nbsp;тепловую энергию, не&nbsp;принимая во&nbsp;внимание огромную протяженность городских тепловых сетей&nbsp;и, как следствие, оплату тепловых потерь при транспортировке тепловой энергии, отсутствие &laquo;посреднических&raquo; услуг при поставке тепловой энергии, полная независимость от&nbsp;состояния теплотрасс и&nbsp;&laquo;нерасторопности&raquo; при их&nbsp;ремонтах и&nbsp;профилактике.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
